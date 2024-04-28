@@ -1,0 +1,67 @@
+.CityPage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    >div {
+        position: relative;
+        flex-basis: 27%;
+        margin: 0 auto;
+
+        >img:first-child {
+            width: 850px;
+            height: 350px;
+        }
+
+        >div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            >h1 {
+                font-size: 25px;
+                color: #0e0e0e;
+            }
+
+            >p {
+                font-size: 25px;
+                color: #000000;
+
+            }
+        }
+
+    }
+
+    >div:nth-child(n+2)>img {
+        width: 600px;
+    }
+
+    >div:nth-child(n+3)>img {
+        width: 480px;
+        height: 250px;
+    }
+
+    .about-page {
+        width: 600px;
+        position: absolute;
+        top: 28%;
+        left: 28%;
+        color: #fff;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgba($color: #0a0a0a, $alpha: .6);
+        text-align: center;
+        
+
+        >span {
+            font-size: 25px;
+            cursor: pointer;
+            margin-left: 80%;
+        }
+    }
+
+}
